@@ -12,7 +12,7 @@ Hệ thống sử dụng Deep Learning (CNN) để phân tích ảnh X-ray phổ
 1. Clone repository này về máy:
 ```bash
 git clone https://github.com/noqokhxnh/Lung_Cancer.git
-cd <Lung_Cancer>
+cd Lung_Cancer
 ```
 
 2. Cài đặt các thư viện cần thiết:
