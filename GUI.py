@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 import tensorflow as tf
 import numpy as np
 import os
-
+from train import IMG_SIZE
 class LungXrayApp:
     def __init__(self, root):
         self.root = root
@@ -141,7 +141,7 @@ class LungXrayApp:
                 # Đọc và tiền xử lý ảnh
                 img = tf.keras.preprocessing.image.load_img(
                     self.image_path,
-                    target_size=(224, 224)
+                    target_size=(IMG_SIZE, IMG_SIZE)
                 )
                 img_array = tf.keras.preprocessing.image.img_to_array(img)
                 img_array = np.expand_dims(img_array, axis=0)
